@@ -1,0 +1,253 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SimulasiActivity"
+    android:background="@drawable/bgdasar">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        app:cardBackgroundColor="@color/sunset"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:cardCornerRadius="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Simulasi Model"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:textStyle="bold|normal"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnBack"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="35dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/sunset"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/sky"
+        app:layout_constraintTop_toBottomOf="@+id/nav">
+
+        <!-- Feature 1 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fitur1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/long_hair"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="15"
+                android:hint="long hair (0.00~1.00)"
+                android:inputType="numberSigned|numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                tools:ignore="HardcodedText" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Feature 2 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fitur2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/fitur1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/forehead_width_cm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="15"
+                android:hint="forehead width cm(11.40~15.10)"
+                android:inputType="numberSigned|numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                tools:ignore="HardcodedText" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Feature 3 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fitur3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+
+            app:layout_constraintTop_toBottomOf="@+id/fitur2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/forehead_height_cm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="15"
+                android:hint="forehead height cm (5.10~7.10)"
+                android:inputType="numberSigned|numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                tools:ignore="HardcodedText" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Feature 4 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fitur4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/fitur3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/nose_wide"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="15"
+                android:hint="nose wide(0.00~1.00)"
+                android:inputType="numberSigned|numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                tools:ignore="HardcodedText" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Feature 5 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fitur5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/fitur4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/nose_long"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="15"
+                android:hint="nose long(0.00~1.00)"
+                android:inputType="numberSigned|numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                tools:ignore="HardcodedText" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Feature 6 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fitur6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/fitur5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/lips_thin"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="15"
+                android:hint="lips thin(0.00~1.00)"
+                android:inputType="numberSigned|numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                tools:ignore="HardcodedText" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Feature 7 -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fitur7"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/fitur6"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <EditText
+                android:id="@+id/distance_nose_to_lip_long"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:ems="15"
+                android:hint="distance nose to lip long(0.00~1.00)"
+                android:inputType="numberSigned|numberDecimal"
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                tools:ignore="HardcodedText" />
+
+        </androidx.cardview.widget.CardView>
+
+        <!-- Predict Button -->
+        <Button
+            android:backgroundTint="@color/sunset"
+            android:id="@+id/btnPredict"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Predict"
+            app:layout_constraintTop_toBottomOf="@+id/fitur7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+        <!-- Result CardView -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/hasil"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="15dp"
+            app:cardBackgroundColor="@color/sky"
+            app:layout_constraintTop_toBottomOf="@+id/btnPredict"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <TextView
+                android:id="@+id/tvHasil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Hasil"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                tools:ignore="HardcodedText" />
+
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
